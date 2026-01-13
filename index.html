@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="TAKE OVER - Premium Underground Trap Nightlife Events">
+    <meta name="theme-color" content="#000000">
+    <title>TAKE OVER | Trap Nightlife</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">SYNCING<span class="loader-dots">...</span></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo" id="nav-logo">
+            TAKE <span class="text-red">OVER</span>
+        </div>
+        <button class="nav-menu-btn" id="menuBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#hero" class="mobile-menu-link" data-text="HOME">HOME</a>
+            <a href="#archive" class="mobile-menu-link" data-text="ARCHIVE">ARCHIVE</a>
+            <a href="#events" class="mobile-menu-link" data-text="SCHEDULE">SCHEDULE</a>
+            <a href="#footer" class="mobile-menu-link" data-text="CONTACT">CONTACT</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <div class="social-links">
+                <a href="#" id="social-instagram" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" id="social-twitter" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" id="social-spotify" aria-label="Spotify"><i data-lucide="music"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070&auto=format&fit=crop" alt=""
+                class="hero-image" id="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle reveal" id="hero-subtitle">PREMIUM UNDERGROUND INFRASTRUCTURE</p>
+            <h1 class="hero-title glitch" id="hero-title" data-text="TAKE OVER">TAKE OVER</h1>
+            <a href="#events" class="hero-btn glow-btn" id="hero-btn">
+                <span id="hero-btn-text">SECURE ACCESS</span>
+                <i data-lucide="chevron-down"></i>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Archive Section -->
+    <section class="archive" id="archive">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" id="archive-title">ARCHIVE</h2>
+                <p class="section-subtitle" id="archive-subtitle">VISUAL EVIDENCE // SELECT A NIGHT</p>
+            </div>
+            <div class="archive-grid" id="archive-grid">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="events">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" id="schedule-title">SCHEDULE</h2>
+                <p class="section-subtitle" id="schedule-subtitle">UPCOMING TRANSMISSIONS</p>
+            </div>
+            <div class="events-list" id="events-list">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-header">
+            <button class="gallery-back" id="galleryBack">
+                <i data-lucide="arrow-left"></i>
+                <span id="back-text">BACK</span>
+            </button>
+            <h2 class="gallery-title" id="galleryTitle">EVENT <span class="text-red">ARCHIVE</span></h2>
+            <div class="gallery-icon"><i data-lucide="camera"></i></div>
+        </div>
+        <div class="gallery-content">
+            <div class="gallery-loading" id="galleryLoading">
+                <div class="loader-spinner"></div>
+                <p id="loading-text">SYNCING_DATA...</p>
+            </div>
+            <div class="gallery-error" id="galleryError">
+                <i data-lucide="alert-circle"></i>
+                <h3 id="error-title">UPLINK ERROR</h3>
+                <button class="glow-btn" id="errorRetry">BYPASS TO DEMO</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <h2 class="footer-cta reveal" id="footer-cta">
+                JOIN THE <span class="text-red">VOID.</span>
+            </h2>
+            <div class="social-links footer-social">
+                <a href="#" id="footer-instagram" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                <a href="#" id="footer-twitter" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="#" id="footer-spotify" aria-label="Spotify"><i data-lucide="music"></i></a>
+            </div>
+            <p class="footer-copyright" id="footer-copyright">
+                © 2024 TAKE OVER ENTERTAINMENT // PROTOCOL ZERO
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
